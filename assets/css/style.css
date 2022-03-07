@@ -1,0 +1,1847 @@
+/* html{
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+} */
+
+/* section{
+  scroll-snap-align: start;
+  position: relative;
+} */
+
+#content {
+  display: block;
+  background-color: black;           
+  
+}
+.internal {
+  display: block;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #272829;
+  background-color: black;
+}
+
+a {
+  color: #0563bb;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #067ded;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: cursive;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{
+  margin-top:0;
+  margin-bottom:.5rem;
+  font-weight:500;
+  line-height:1.2
+}
+.h1,h1{
+  font-size:calc(1.375rem + 1.5vw)
+}
+ 
+@media (min-width:1200px){
+  .h1,h1{font-size:2.5rem}
+}
+.h2,h2{font-size:calc(1.325rem + .9vw)
+}
+@media (min-width:1200px){
+  .h2,h2{font-size:2rem}
+}
+.h3,h3{font-size:calc(1.3rem + .6vw)
+}
+@media (min-width:1200px){
+  .h3,h3{font-size:1.75rem}
+}
+.h4,h4{
+  font-size:calc(1.275rem + .3vw)
+}
+@media (min-width:1200px){
+  .h4,h4{font-size:1.5rem}
+}
+.h5,h5{
+  font-size:1.25rem
+}
+.h6,h6{
+  font-size:1rem
+}
+p{
+  margin-top:0;
+  margin-bottom:0vh;
+  font-size: 1.7vw;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 700px){
+  p{
+    margin-top: 1vh;
+    margin-bottom:0vh;
+    font-size: 3vh;
+  }
+}
+
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/**
+* . . . . . . . . *
+. * . . . . . . * .
+. . * . . . . * . .
+. . . * . . * . . .
+. . . . * * . . . .
+. . . . * * . . . .
+. . . * . . * . . .
+. . * . . . . * . .
+. * . . . . . . * .
+* . . . . . . . . *
+**/
+
+
+/* ------------------------ All page setting ------------------------ */
+.cover-background{
+  width: 100%;
+  height: 100vh;
+  background: url("../../image/background/batik1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 1;
+  opacity: 1;
+  position: relative;
+  /* border: 1px solid white; */
+  
+}
+
+.second-background{
+  width: 100%;
+  height: 100vh;
+  background: url("../../image/background/batik1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border: 1px solid white;
+  opacity: 1;
+  z-index: 10;
+}
+.third-background{
+  width: 100%;
+  height: 100vh;
+  background: url("../../image/background/batik1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border: 1px solid white;
+  opacity: 1;
+  z-index: 10;
+}
+.fourth-background{
+  width: 100%;
+  height: 100vh;
+  background: url("../../image/background/batik1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border: 1px solid white;
+  opacity: 1;
+  z-index: 10;
+}
+.fiveth-background{
+  width: 100%;
+  height: 100vh;
+  background: url("../../image/background/batik1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border: 1px solid white;
+  opacity: 1;
+  z-index: 10;
+}
+.sixth-background{
+  width: 100%;
+  height: 100vh;
+  background: url("../../image/background/batik1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border: 1px solid white;
+  opacity: 1;
+  z-index: 10;
+}
+
+
+/* ------------------------ Border art corner for cover only ------------------------ */
+.header-border-cover{
+  width: 100%;
+  height: 40%;
+  top: 0;
+  /* border: 1px solid green; */
+  z-index: -1000;
+  position: fixed;
+  float: top;
+}
+.footer-border-cover{
+  width: 100%;
+  height: 40%;
+  bottom: 0;
+  /* border: 1px solid green; */
+  z-index: -1000;
+  position: fixed;
+  float: bottom;
+}
+
+.top-left-corner-cover{
+  width: 25%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* border: 1px solid blue; */
+  z-index: -1;
+  position: relative;
+  float: top;
+  float: left;
+
+  background-image: url("../../image/background/batik-pojok-top_right.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+}
+.top-right-corner-cover{
+  width: 25%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  /* border: 1px solid blue; */
+  z-index: -1;
+  position: relative;
+  float: top;
+  float: right;
+
+  background-image: url("../../image/background/batik-pojok-top_right.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.bottom-left-corner-cover{
+  width: 25%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  /* border: 1px solid blue; */
+  z-index: -1;
+  position: relative;
+  float: bottom;
+  float: left;
+
+  background-image: url("../../image/background/batik-pojok-bottom-left.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.bottom-right-corner-cover{
+  width: 25%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  /* border: 1px solid blue; */
+  z-index: -1;
+  position: relative;
+  float: bottom;
+  float: right;
+
+  background-image: url("../../image/background/batik-pojok-bottom-left.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 700px){  /*--------------------------- for  600px screen width ---------------------------*/
+  .header-border-cover{
+    width: 100%;
+    height: 20%;
+    top: 0;
+    /* border: 1px solid green; */
+    z-index: -1000;
+    position: fixed;
+    float: top;
+  }
+  .footer-border-cover{
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    /* border: 1px solid green; */
+    z-index: -1000;
+    position: fixed;
+    float: bottom;
+  }
+}
+
+
+/* ------------------------ Border art corner not for cover ------------------------ */
+.header-border{
+  width: 100%;
+  height: 40%;
+  top: 0;
+  border: 1px solid green;
+  z-index: 1;
+  position: absolute;
+}
+.footer-border{
+  width: 100%;
+  height: 40%;
+  bottom: 0;
+  border: 1px solid aqua;
+  z-index: 1;
+  position: absolute;
+}
+
+.top-left-corner{
+  background-image: url("../../image/background/batik-pojok-top_right.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+
+  width: 25%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 1px solid blue;
+  z-index: 2;
+  position: relative;
+  float: top;
+  float: left;
+}
+.top-right-corner{
+  background-image: url("../../image/background/batik-pojok-top_right.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+
+  width: 25%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  border: 1px solid blue;
+  z-index: 2;
+  position: relative;
+  float: top;
+  float: right;
+}
+.bottom-left-corner{
+  background-image: url("../../image/background/batik-pojok-bottom-left.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+
+  width: 25%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  border: 1px solid blue;
+  z-index: 2;
+  position: relative;
+  float: bottom;
+  float: left;
+}
+.bottom-right-corner{
+  background-image: url("../../image/background/batik-pojok-bottom-left.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+
+  width: 25%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  border: 1px solid blue;
+  z-index: 2;
+  position: relative;
+  float: bottom;
+  float: right;
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 700px){  /*--------------------------- for  600px screen width ---------------------------*/
+  .header-border{
+    width: 100%;
+    height: 15%;
+    top: 0;
+    /* border: 1px solid green; */
+    z-index: 1;
+    position: absolute;
+  }
+  .footer-border{
+    width: 100%;
+    height: 15%;
+    bottom: 0;
+    /* border: 1px solid aqua; */
+    z-index: 1;
+    position: absolute;
+  }
+}
+
+/**
+* . . . . . . . . *
+. * . . . . . . * .
+. . * . . . . * . .
+. . . * . . * . . .
+. . . . * * . . . .
+. . . . * * . . . .
+. . . * . . * . . .
+. . * . . . . * . .
+. * . . . . . . * .
+* . . . . . . . . *
+**/
+
+
+/* -------------------------------------------------- Fill the cover all artistic -------------------------------------------------- */
+.frame-invitation-name{
+  width: 100%;
+  height: 100vh;
+  z-index: 9;
+  /* border: 1px solid red; */
+  position: fixed;
+}
+
+.frame-cover-image{
+  /* border: 2px solid aqua;  */
+  height: 45%;
+}
+
+.cover-image{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  /* border: 1px solid blue; */
+  z-index: -1;
+  position: relative;
+  float: top;
+  float: center;
+  background-image: url("../../image/background/Gunungan-Gold.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+}
+
+.invitation-text{ /*------------- UNDANGAN -------------*/
+  padding-top: 5vh;
+  position:static;
+  width: 100%;
+  height: 100%;
+  font-family: cursive;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 3vw;
+  /* identical to box height */
+  text-align: center;
+  color: #f4d873;
+  /* border: 1px solid #000000; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.attention-invite{ /*------------- Kepada Yang Terhormat / Di tempat -------------*/
+  padding-top: 10px;
+  position:static;
+  width: 100%;
+  height: 100%;
+  font-family: normal;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 1.5vw;
+  /* identical to box height */
+  text-align: center;
+  color: #f1f1ee;
+  /* border: 1px solid #000000; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.attention-to{ /*------------- Bpk. ... -------------*/
+  padding-top: 0.5vw;
+  position:static;
+  width: 100%;
+  height: 100%;
+  font-family: normal;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 2.7vw;
+  /* identical to box height */
+  text-align: center;
+  color: #FFF509;
+  /* border: 1px solid #000000; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.frame-invitation-text{
+  /* border: 2px solid aqua;  */
+  height: 20%;
+}
+.frame-attention-invite{
+  /* border: 2px solid aqua;  */
+  height: 8%;
+}
+.frame-attention-to{
+  /* border: 2px solid aqua;  */
+  height: auto;
+}
+
+
+.left-wedding-person-name{
+  padding-top: 10vw;
+  padding-right: 1vw;
+  position:static;
+  width: 100%;
+  height: 100%;
+  font-family: cursive;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 3vw;
+  /* identical to box height */
+  text-align: right;
+  color: #f4d873;
+  /* border: 1px solid #000000; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.right-wedding-person-name{
+  padding-top: 10vw;
+  padding-left: 1vw;
+  position:static;
+  width: 100%;
+  height: 100%;
+  font-family: cursive;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 3vw;
+  /* identical to box height */
+  text-align: left;
+  color: #f4d873;
+  /* border: 1px solid #000000; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.frame-left-wedding-person-name{
+  /* border: 2px solid aqua;  */
+  height: 60%;
+}
+.frame-right-wedding-person-name{
+  /* border: 2px solid aqua;  */
+  height: 60%;
+}
+
+
+/* --------------------------------- FIT TO MOBILE DEVICE FORMAT SCREEN ---------------------------*/
+@media only screen and (min-width: 100px) and (max-width: 700px){
+
+  .invitation-text{
+    padding-top: 20vw;
+    position:relative;
+    width: 100%;
+    height: 100%;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 5vw;
+    /* identical to box height */
+    text-align: center;
+    color: #f4d873;
+    /* border: 1px solid #000000; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .frame-cover-image{
+    /* border: 2px solid aqua;  */
+    height: 45%;
+  }
+  
+  .attention-invite{
+    padding-top: 3vw;
+    position:static;
+    width: 100%;
+    height: 100%;
+    font-family: normal;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 2.5vw;
+    /* identical to box height */
+    text-align: center;
+    color: #f1f1ee;
+    /* border: 1px solid #000000; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .attention-to{
+    padding-top: 4vw;
+    position:static;
+    width: 100%;
+    height: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 3.5vw;
+    /* identical to box height */
+    text-align: center;
+    color: #FFF509;
+    /* border: 1px solid #000000; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .frame-invitation-text{
+    /* border: 2px solid aqua;  */
+    height: 20%;
+  }
+  .frame-attention-invite{
+    /* border: 2px solid aqua;  */
+    height: auto;
+  }
+  .frame-attention-to{
+    /* border: 2px solid aqua;  */
+    height: auto;
+  }
+
+
+  .left-wedding-person-name{
+    padding-top: 50vw;
+    padding-right: 1vw;
+    position:static;
+    width: 100%;
+    height: 100%;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 6vw;
+    /* identical to box height */
+    text-align: right;
+    color: #f4d873;
+    /* border: 1px solid #000000; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .right-wedding-person-name{
+    padding-top: 50vw;
+    padding-left: 1vw;
+    position:static;
+    width: 100%;
+    height: 100%;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 6vw;
+    /* identical to box height */
+    text-align: left;
+    color: #f4d873;
+    /* border: 1px solid #000000; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .frame-left-wedding-person-name{
+    /* border: 2px solid aqua;  */
+    height: 60%;
+  }
+  .frame-right-wedding-person-name{
+    /* border: 2px solid aqua;  */
+    height: 60%;
+  }
+}
+
+
+
+/**
+* . . . . . . . . *
+. * . . . . . . * .
+. . * . . . . * . .
+. . . * . . * . . .
+. . . . * * . . . .
+. . . . * * . . . .
+. . . * . . * . . .
+. . * . . . . * . .
+. * . . . . . . * .
+* . . . . . . . . *
+**/
+
+
+
+/* -------------------------------------------------- Fill after cover all artistic -------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------- Second all artistic ------------------------------------------------------ */
+
+.frame-second-page{
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+  /* border: 1px solid red; */
+  position: absolute;
+}
+.top-image-second-page{
+   width: 100%;
+   height: 25vh;
+   /* border: lavender 1px solid ; */
+ }
+.bismillah-image{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  /* border: 1px solid blue; */
+  z-index: 4;
+  position: relative;
+  background-image: url("../../image/background/pngwing__.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+}
+.separator-image{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  /* border: 1px solid blue; */
+  z-index: 4;
+  position: relative;
+  background-image: url("../../image/background/PngItem_4711.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+}
+
+.text-5vh{
+  width: 100%;
+  height: 5vh;
+  /* border: lavender 1px solid ; */
+  float: top;
+}
+.text-10vh{
+  width: 100%;
+  height: 10vh;
+  /* border: lavender 1px solid ; */
+  float: top;
+}
+.text-15vh{
+  width: 100%;
+  height: 15vh;
+  /* border: lavender 1px solid ; */
+  float: top;
+}
+.text-20vh{
+  width: 100%;
+  height: 20vh;
+  /* border: lavender 1px solid ; */
+  float: top;
+}
+.text-25vh{
+  width: 100%;
+  height: 25vh;
+  /* border: lavender 1px solid ; */
+  float: top;
+}
+.text-30vh{
+  width: 100%;
+  height: 30vh;
+  /* border: lavender 1px solid ; */
+  float: top;
+}
+
+.bismillah-text{
+  padding-top: auto;
+  position:relative;
+  width: 100%;
+  height: 100%;
+  font-family: cursive;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 1.5vw;
+  /* identical to box height */
+  text-align: center;
+  color: #f4d873;
+  /* border: 1px solid #000000; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.standard-white-text{
+  padding-top: auto;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  position:relative;
+  width: 100%;
+  height: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 1.2vw;
+  /* identical to box height */
+  text-align: center;
+  color: #fffdf6;
+  /* border: 1px solid white; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.name-text{
+  padding-top: auto;
+  position:relative;
+  width: 100%;
+  height: 100%;
+  font-family: cursive;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 3vw;
+  /* identical to box height */
+  text-align: center;
+  color: #f4d873;
+  /* border: 1px solid #000000; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.height-col-5vh{height: 5vh; /* border: solid 1px black; */ float: left; display: flex; flex-direction: row;}
+.height-col-10vh{height: 10vh; /* border: solid 1px black; */ float: left; display: flex; flex-direction: row;}
+.height-col-15vh{height: 15vh; /* border: solid 1px black */; float: left; display: flex; flex-direction: row;}
+.height-col-20vh{height: 20vh; /* border: solid 1px black; */ float: left; display: flex; flex-direction: row;}
+.height-col-25vh{height: 25vh; /* border: solid 1px black; */ float: left; display: flex; flex-direction: row;}
+.height-col-30vh{height: 30vh; /* border: solid 1px black; */ float: left; display: flex; flex-direction: row;}
+
+/* --------------------------------- FIT TO MOBILE DEVICE FORMAT SCREEN ---------------------------*/
+@media only screen and (min-width: 100px) and (max-width: 700px){
+  .top-image-second-page{
+    width: 100%;
+    height: 20vh;
+    /* border: lavender 1px solid ; */
+  }
+  .bismillah-image{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /* border: 1px solid blue; */
+    z-index: 4;
+    position: relative;
+    background-image: url("../../image/background/pngwing__.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .separator-image{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /* border: 1px solid blue; */
+    z-index: 4;
+    position: relative;
+    background-image: url("../../image/background/PngItem_4711.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+  }
+  .text-5vh{
+    width: 100%;
+    height: 5vh;
+    /* border: lavender 1px solid ; */
+    float: top;
+  }
+  .text-10vh{
+    margin: auto;
+    width: 100%;
+    height: auto;
+    /* border: lavender 1px solid ; */
+    float: top;
+  }
+  .text-15vh{
+    width: 100%;
+    height: 15vh;
+    /* border: lavender 1px solid ; */
+    float: top;
+  }
+  .text-20vh{
+    width: 100%;
+    height: 20vh;
+    /* border: lavender 1px solid ; */
+    float: top;
+  }
+  .text-25vh{
+    width: 100%;
+    height: 25vh;
+    /* border: lavender 1px solid ; */
+    float: top;
+  }
+  .text-30vh{
+    width: 100%;
+    height: 30vh;
+    /* border: lavender 1px solid ; */
+    float: top;
+  }
+  .bismillah-text{
+    padding-top: auto;
+    position:relative;
+    width: 100%;
+    height: 100%;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 4.5vw;
+    /* identical to box height */
+    text-align: center;
+    color: #f4d873;
+    /* border: 1px solid #000000; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .standard-white-text{
+    padding-top: auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    position:relative;
+    width: 100%;
+    height: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 2.7vw;
+    /* identical to box height */
+    text-align: center;
+    color: #fffdf6;
+    /* border: 1px solid white; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .name-text{
+    padding-top: auto;
+    position:contain;
+    width: 100%;
+    height: 100%;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 4vh;
+    /* identical to box height */
+    text-align: center;
+    color: #f4d873;
+    /* border: 1px solid #000000; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .height-col-5vh{height: 5vh; /* border: solid 1px black; */ float: left; display: flex; flex-direction: row;}
+  .height-col-10vh{height: 10vh; /* border: solid 1px black; */ float: left; display: flex; flex-direction: row;}
+  .height-col-15vh{height: 15vh; /* border: solid 1px black; */ float: left; display: flex; flex-direction: row;}
+  .height-col-20vh{height: 20vh; /* border: solid 1px black; */ float: left; display: flex; flex-direction: row;}
+  .height-col-25vh{height: 20vh; /* border: solid 1px black; */ float: left; display: flex; flex-direction: row;}
+  .height-col-30vh{height: 30vh; /* border: solid 1px black; */ float: left; display: flex; flex-direction: row;}
+}
+
+
+
+
+
+/**
+* . . . . . . . . *
+. * . . . . . . * .
+. . * . . . . * . .
+. . . * . . * . . .
+. . . . * * . . . .
+. . . . * * . . . .
+. . . * . . * . . .
+. . * . . . . * . .
+. * . . . . . . * .
+* . . . . . . . . *
+**/
+
+
+
+
+/* -------------------------------------------------------- Third all artistic ------------------------------------------------------ */
+.frame-third-page{
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+  /* border: 1px solid greenyellow; */
+  position: absolute;
+  /*
+  background-color: greenyellow;
+  opacity: 0.2;*/
+}
+
+.date-frame-1{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  float: right;
+  /* border: 1px solid blue; */
+  z-index: 5;
+  position: relative;
+  background-image: url("../../image/background/gold-25109.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border: 1px solid #FFF509; */
+}
+
+.date-text-30vh{
+  padding-top: auto;
+  padding-bottom: auto;
+  position:relative;
+  width: 100%;
+  height: 30vh;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: cursive;
+  font-style: oblique;
+  font-weight: bold;
+  /* identical to box height */
+  color: #f4d873;
+  /* border: 1px solid #000000; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.event-name-text{
+  padding-top: auto;
+  position:relative;
+  width: 100%;
+  height: 100%;
+  font-family: cursive;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 3vw;
+  /* identical to box height */
+  text-align: center;
+  color: #f4d873;
+  /* border: 1px solid #f8f7f7; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.time-text{
+  padding-top: auto;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  position:relative;
+  width: 100%;
+  height: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 1.5vw;
+  /* identical to box height */
+  text-align: center;
+  color: #fffdf6;
+  /* border: 1px solid white; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.address-text{
+  padding-top: auto;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  position:relative;
+  width: 100%;
+  height: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 1.5vw;
+  /* identical to box height */
+  text-align: center;
+  color: #fffdf6;
+  /* border: 1px solid white; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.frame-control-6-wrap{padding-left: 0%; padding-right: 0%; width: 50%;}
+.height-col-5vh-wrap{width: 50%; height: 5vh; /* border: 1px solid #f1f1ee; */ float: left; display: flex; flex-wrap: nowrap; flex-direction: column!important}
+.height-col-10vh-wrap{width: 50%; height: 10vh; /* border: 1px solid #f1f1ee; */ float: left; display: flex; flex-wrap: nowrap; flex-direction: column!important}
+.height-col-15vh-wrap{width: 50%; height: 15vh; /* border: 1px solid #f1f1ee; */ float: left; display: flex; flex-wrap: nowrap; flex-direction: column!important}
+.height-col-20vh-wrap{width: 50%; height: 20vh; /* border: 1px solid #f1f1ee; */ float: left; display: flex; flex-wrap: nowrap; flex-direction: column!important}
+.height-col-25vh-wrap{width: 50%; height: 25vh; /* border: 1px solid #f1f1ee; */ float: left; display: flex; flex-wrap: nowrap; flex-direction: column!important}
+.height-col-30vh-wrap{padding-left: 30vw; width: 50%; height: 30vh; /* border: 1px solid #f1f1ee; */ float: left; display: flex; flex-wrap: nowrap; flex-direction: column!important}
+
+.padding-control-3-wrap{padding-left: 0%;padding-right: 0%;}
+.height-col-30vh-wrap-right-event{padding-left: 0vw; width: 50%; height: 30vh; /* border: 1px solid #f1f1ee; */ float: left; display: flex; flex-wrap: nowrap; flex-direction: column!important}
+.padding-control-3-wrap-right-event{padding-left: 0%;padding-right: 0%;}
+
+.padding-control-3-wrap-fourth-page{padding-left: 0%;padding-right: 0%;}
+.height-col-30vh-wrap-right-event-fourth-page{padding-left: 0vw; width: 50%; height: 30vh; /* border: 1px solid #f1f1ee; */ float: left; display: flex; flex-wrap: nowrap; flex-direction: column!important}
+.padding-control-3-wrap-right-event-fourth-page{padding-left: 0%;padding-right: 0%;}
+
+.padding-control-3-wrap-sixth-page{padding-left: 0%;padding-right: 0%;}
+.height-col-30vh-wrap-right-event-sixth-page{padding-left: 0vw; width: 50%; height: 30vh; /* border: 1px solid #f1f1ee; */ float: left; display: flex; flex-wrap: nowrap; flex-direction: column!important}
+.padding-control-3-wrap-right-event-sixth-page{padding-left: 0%;padding-right: 0%;}
+
+
+@media only screen and (min-width: 100px) and (max-width: 700px){
+  .frame-control-6-wrap{padding-left: 0%; padding-right: 0%; width: 50%;}
+  .height-col-5vh-wrap{width: 100%; height: 5vh; /* border: 1px solid #f1f1ee; */ float: none; display: flex; flex-wrap: wrap!important}
+  .height-col-10vh-wrap{width: 100%; height: 10vh; /* border: 1px solid #f1f1ee; */ float: none; display: flex; flex-wrap: wrap!important}
+  .height-col-15vh-wrap{width: 100%; height: 15vh; /* border: 1px solid #f1f1ee; */ float: none; display: flex; flex-wrap: wrap!important}
+  .height-col-20vh-wrap{width: 100%; height: 20vh; /* border: 1px solid #f1f1ee; */ float: none; display: flex; flex-wrap: wrap!important}
+  .height-col-25vh-wrap{width: 100%; height: 25vh; /* border: 1px solid #f1f1ee; */ float: none; display: flex; flex-wrap: wrap!important}
+  .height-col-30vh-wrap{padding-left: 0vw; width: 100%; height: 30vh; /* border: 1px solid #f1f1ee; */ float: none; display: flex; flex-wrap: wrap!important}
+  
+  .padding-control-3-wrap{padding-left: 0%;padding-right: 0%;}
+  .height-col-30vh-wrap-right-event{padding-left: 0vw; width: 100%; height: auto; /* border: 1px solid #f1f1ee; */ float: none; display: flex; flex-wrap: wrap!important}
+  .padding-control-3-wrap-right-event{padding-left: 25%;padding-right: 25%;}
+
+  .padding-control-3-wrap-fourth-page{padding-left: 0%;padding-right: 0%;}
+  .height-col-30vh-wrap-right-event-fourth-page{padding-left: 0vw; width: 100%; height: auto; /* border: 1px solid #f1f1ee; */ float: none; display: flex; flex-wrap: wrap!important}
+  .padding-control-3-wrap-right-event-fourth-page{padding-left: 25%;padding-right: 25%;}
+
+  .padding-control-3-wrap-sixth-page{padding-left: 0%;padding-right: 0%;}
+  .height-col-30vh-wrap-right-event-sixth-page{padding-left: 0vw; width: 100%; height: auto; /* border: 1px solid #f1f1ee; */ float: none; display: flex; flex-wrap: wrap!important}
+  .padding-control-3-wrap-right-event-sixth-page{padding-left: 25%;padding-right: 25%;}
+
+  .event-name-text{
+    padding-top: auto;
+    position:relative;
+    width: 100%;
+    height: 100%;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 12vw;
+    /* identical to box height */
+    text-align: center;
+    color: #f4d873;
+    /* border: 1px solid #fffbfb; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .time-text{
+    padding-top: auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    position:relative;
+    width: 100%;
+    height: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 6vw;
+    /* identical to box height */
+    text-align: center;
+    color: #fffdf6;
+    /* border: 1px solid white; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .address-text{
+    padding-top: auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    position:relative;
+    width: 100%;
+    height: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 3vw;
+    /* identical to box height */
+    text-align: center;
+    color: #fffdf6;
+    /* border: 1px solid white; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+
+
+/**
+* . . . . . . . . *
+. * . . . . . . * .
+. . * . . . . * . .
+. . . * . . * . . .
+. . . . * * . . . .
+. . . . * * . . . .
+. . . * . . * . . .
+. . * . . . . * . .
+. * . . . . . . * .
+* . . . . . . . . *
+**/
+
+
+
+/* -------------------------------------------------------- fourth all artistic ------------------------------------------------------ */
+.frame-fourth-page{
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+  position: relative;
+  /* border: 5px solid blueviolet; */
+  /* background-color: greenyellow; */
+  /* opacity: 0.2; */
+}
+
+.text-protokol-kesehatan{
+  position:relative;
+  width: 100%;
+  height: 100%;
+  font-family: cursive;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 3vw;
+  /* identical to box height */
+  text-align: center;
+  color: #f4d873;
+  /* border: 1px solid #fffbfb; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text-item-protokol-kesehatan{
+  position:relative;
+  width: 100%;
+  height: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1vw;
+  /* identical to box height */
+  text-align: center;
+  color: #ffffff;
+  /* border: 1px solid #fffbfb; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text-adab-walimah{
+  position:relative;
+  width: 100%;
+  height: 100%;
+  font-family: cursive;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 3vw;
+  /* identical to box height */
+  text-align: center;
+  color: #f4d873;
+  /* border: 1px solid #fffbfb; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text-item-adab-walimah{
+  position:relative;
+  width: 100%;
+  height: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 1.7vw;
+  /* identical to box height */
+  text-align: center;
+  color: #ffffff;
+  /* border: 1px solid #fffbfb; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+.space-5vh-fourth-page{width: 100%; height: 5vh; /* border: solid 1px white; */ float: left;}
+.space-10vh-fourth-page{width: 100%; height: 10vh; /* border: solid 1px white; */ float: left;}
+.space-15vh-fourth-page{width: 100%; height: 15vh; /* border: solid 1px white; */ float: left;}
+.space-20vh-fourth-page{width: 100%; height: 20vh; /* border: solid 1px white; */ float: left;}
+.space-25vh-fourth-page{width: 100%; height: 25vh; /* border: solid 1px white; */ float: left;}
+.space-30vh-fourth-page{width: 100%; height: 30vh; /* border: solid 1px white; */ float: left;}
+.space-35vh-fourth-page{width: 100%; height: 35vh; /* border: solid 1px white; */ float: left;}
+.space-40vh-fourth-page{width: 100%; height: 40vh; /* border: solid 1px white; */ float: left;}
+.space-45vh-fourth-page{width: 100%; height: 45vh; /* border: solid 1px white; */ float: left;}
+.space-50vh-fourth-page{width: 100%; height: 50vh; /* border: solid 1px white; */ float: left;}
+.space-auto-fourth-page{width: 100%; height: auto; /* border: solid 1px white; */ float: left;}
+
+.space-50vh-padding-fourth-page{width: 100%; height: 40vh; padding-left: 2vw; padding-right: 2vw; /* border: solid 1px white; */ float: left; display: flex;}
+.space-30vh-wrap-fourth-page{width: 100%; height: 30vh; /* border: solid 1px white; */}
+.force-wraping-image{display: flex; flex-direction: row;}
+.frame-image-wraping{display: flex; flex-wrap: wrap;}
+.image-box{width: 100%; height: 20vh; padding-left: 20vw; padding-right: 20vw; /* border: solid 1px white; */}
+.text-image-box{width: 100%; height: 10vh; padding: 1%; /* border: solid 1px white; */}
+
+.text-col-5vh-fourth-page{width: 100%; height: 5vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-10vh-fourth-page{width: 100%; height: 10vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-15vh-fourth-page{width: 100%; height: 15vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-20vh-fourth-page{width: 100%; height: 20vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-25vh-fourth-page{width: 100%; height: 25vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-30vh-fourth-page{width: 100%; height: 30vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-35vh-fourth-page{width: 100%; height: 35vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-40vh-fourth-page{width: 100%; height: 40vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-45vh-fourth-page{width: 100%; height: 45vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-50vh-fourth-page{width: 100%; height: 50vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-auto-fourth-page{width: 100%; height: auto; /* border: solid 1px palevioletred; */ float: left;}
+
+.padding-control-3-wrap-fourt-page{padding-left: 0%;padding-right: 0%;}
+.height-col-30vh-wrap-right-event-fourt-page{padding-left: 0vw; width: 50%; height: 30vh; float: left; display: flex; flex-wrap: nowrap; flex-direction: column!important}
+.padding-control-3-wrap-right-event-fourt-page{padding-left: 0%;padding-right: 0%;}
+
+.protokol-kesehatan-image{
+  width: 100%;
+  height: 6vw;
+  top: 0;
+  /* border: 1px solid blue; */
+  z-index: 4;
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 700px){
+  .space-5vh-fourth-page{width: 100%; height: 1vh; /* border: solid 1px white; */}
+  .space-10vh-fourth-page{width: 100%; height: 10vh; /* border: solid 1px white; */}
+  .space-15vh-fourth-page{width: 100%; height: 15vh; /* border: solid 1px white; */}
+  .space-20vh-fourth-page{width: 100%; height: 20vh; /* border: solid 1px white; */}
+  .space-25vh-fourth-page{width: 100%; height: 25vh; /* border: solid 1px white; */}
+  .space-30vh-fourth-page{width: 100%; height: 30vh; /* border: solid 1px white; */}
+  .space-35vh-fourth-page{width: 100%; height: 35vh; /* border: solid 1px white; */}
+  .space-40vh-fourth-page{width: 100%; height: 40vh; /* border: solid 1px white; */}
+  .space-45vh-fourth-page{width: 100%; height: 45vh; /* border: solid 1px white; */}
+  .space-50vh-fourth-page{width: 100%; height: 50vh; /* border: solid 1px white; */}
+  .space-auto-fourth-page{width: 100%; height: auto; /* border: solid 1px white; */}
+  
+  .space-50vh-padding-fourth-page{width: 100%; height: auto; padding-left: 0vw; padding-right: 0vw; /* border: solid 1px white; */ float: none; display: flex; flex-wrap: wrap!important}
+  .space-30vh-wrap-fourth-page{width: 100%; height: 10vw; /* border: solid 1px white; */ float: left; display: flex; flex-wrap: wrap;}
+  .force-wraping-image{display: flex; flex-wrap: wrap;}
+  .image-box{max-width: 100%; height: auto; padding-left: 45vw; padding-right: 45vw; /* border: solid 1px white; */}
+  .text-image-box{width: 100%; height: auto; padding:2%; /* border: solid 1px white; */}
+  
+  .text-col-5vh-fourth-page{width: 100%; height: 5vh; /* border: solid 1px palevioletred; */}
+  .text-col-10vh-fourth-page{width: 100%; height: 10vh; /* border: solid 1px palevioletred; */}
+  .text-col-15vh-fourth-page{width: 100%; height: 15vh; /* border: solid 1px palevioletred; */}
+  .text-col-20vh-fourth-page{width: 100%; height: 20vh; /* border: solid 1px palevioletred; */}
+  .text-col-25vh-fourth-page{width: 100%; height: 25vh; /* border: solid 1px palevioletred; */}
+  .text-col-30vh-fourth-page{width: 100%; height: 30vh; /* border: solid 1px palevioletred; */}
+  .text-col-35vh-fourth-page{width: 100%; height: 35vh; /* border: solid 1px palevioletred; */}
+  .text-col-40vh-fourth-page{width: 100%; height: 40vh; /* border: solid 1px palevioletred; */}
+  .text-col-45vh-fourth-page{width: 100%; height: 45vh; /* border: solid 1px palevioletred; */}
+  .text-col-50vh-fourth-page{width: 100%; height: 50vh; /* border: solid 1px palevioletred; */}
+  .text-col-auto-fourth-page{width: 100%; height: auto; /* border: solid 1px palevioletred; */}
+
+  .padding-control-3-wrap-fourt-page{padding-left: 0%;padding-right: 0%;}
+  .height-col-30vh-wrap-right-event-fourt-page{padding-left: 0vw; width: 100%; height: 30vh; /* border: 1px solid #f1f1ee; */ float: none; display: flex; flex-wrap: wrap!important}
+  .padding-control-3-wrap-right-event-fourt-page{padding-left: 25%;padding-right: 25%;}
+  
+  .text-protokol-kesehatan{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 6vw;
+    padding: 3vw;
+    /* identical to box height */
+    text-align: center;
+    color: #f4d873;
+    /* border: 1px solid #fffbfb; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .text-item-protokol-kesehatan{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3vw;
+    /* identical to box height */
+    text-align: center;
+    color: #ffffff;
+    /* border: 1px solid #fffbfb; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .text-adab-walimah{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 6vw;
+    /* identical to box height */
+    text-align: center;
+    color: #f4d873;
+    /* border: 1px solid #fffbfb; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .text-item-adab-walimah{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 2.5vw;
+    /* identical to box height */
+    text-align: center;
+    color: #ffffff;
+    /* border: 1px solid #fffbfb; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .protokol-kesehatan-image{
+    width: 100%;
+    height: 9.6vw;
+    top: 0;
+    /* border: 1px solid blue; */
+    z-index: 4;
+    position: relative;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+
+/**
+* . . . . . . . . *
+. * . . . . . . * .
+. . * . . . . * . .
+. . . * . . * . . .
+. . . . * * . . . .
+. . . . * * . . . .
+. . . * . . * . . .
+. . * . . . . * . .
+. * . . . . . . * .
+* . . . . . . . . *
+**/
+
+
+
+/* -------------------------------------------------------- fiveth all artistic ------------------------------------------------------ */
+
+.space-5vh-fiveth-page{width: 100%; height: 5vh; /* border: solid 1px white; */ float: left;}
+.space-10vh-fiveth-page{width: 100%; height: 10vh; /* border: solid 1px white; */ float: left;}
+.space-15vh-fiveth-page{width: 100%; height: 15vh; /* border: solid 1px white; */ float: left;}
+.space-20vh-fiveth-page{width: 100%; height: 20vh; /* border: solid 1px white; */ float: left;}
+.space-25vh-fiveth-page{width: 100%; height: 25vh; /* border: solid 1px white; */ float: left;}
+.space-30vh-fiveth-page{width: 100%; height: 30vh; /* border: solid 1px white; */ float: left;}
+.space-35vh-fiveth-page{width: 100%; height: 35vh; /* border: solid 1px white; */ float: left;}
+.space-40vh-fiveth-page{width: 100%; height: 40vh; /* border: solid 1px white; */ float: left;}
+.space-45vh-fiveth-page{width: 100%; height: 45vh; /* border: solid 1px white; */ float: left;}
+.space-50vh-fiveth-page{width: 100%; height: 50vh; /* border: solid 1px white; */ float: left;}
+.space-auto-fiveth-page{width: 100%; height: auto; /* border: solid 1px white; */ float: left;}
+
+
+.text-col-5vh-fiveth-page{width: 100%; height: 5vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-10vh-fiveth-page{width: 100%; height: 10vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-15vh-fiveth-page{width: 100%; height: 15vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-20vh-fiveth-page{width: 100%; height: 20vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-25vh-fiveth-page{width: 100%; height: 25vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-30vh-fiveth-page{width: 100%; height: 30vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-35vh-fiveth-page{width: 100%; height: 35vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-40vh-fiveth-page{width: 100%; height: 40vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-45vh-fiveth-page{width: 100%; height: 45vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-50vh-fiveth-page{width: 100%; height: 50vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-auto-fiveth-page{width: 100%; height: auto; /* border: solid 1px palevioletred; */ float: left;}
+
+
+
+.frame-fiveth-page{
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+  position: relative;
+  /* border: 5px solid blueviolet; */
+  /* background-color: greenyellow; */
+  /* opacity: 0.2; */
+}
+
+.barokallahu-lakaa-image{
+  width: 100%;
+  height: 12vw;
+  padding-left: 43vw;
+  padding-right: 43vw;
+  top: 0;
+  z-index: 4;
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-content: center;
+  align-items: center;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.text-barokallahu-lakaa{
+  position:relative;
+  width: 100%;
+  height: auto;
+  font-family: cursive;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: auto;
+  padding: 1vw;
+  /* identical to box height */
+  text-align: center;
+  color: #f4d873;
+  /* border: 1px solid #fffbfb; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text-hormat-kami-pihak-pria{
+  position:relative;
+  width: 100%;
+  height: auto;
+  font-family: cursive;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: auto;
+  padding: 1vw;
+  /* identical to box height */
+  text-align: center;
+  color: #f4d873;
+  /* border: 1px solid #fffbfb; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text-hormat-kami-pihak-wanita{
+  position:relative;
+  width: 100%;
+  height: auto;
+  font-family: cursive;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: auto;
+  padding: 1vw;
+  /* identical to box height */
+  text-align: center;
+  color: #f4d873;
+  /* border: 1px solid #fffbfb; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bottom-image-fiveth-page{
+  height: 25vh;
+  z-index: 7;
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 700px){
+  .space-5vh-fiveth-page{width: 100%; height: 1vh; /* border: solid 1px white; */}
+  .space-10vh-fiveth-page{width: 100%; height: 10vh; /* border: solid 1px white; */}
+  .space-15vh-fiveth-page{width: 100%; height: 15vh; /* border: solid 1px white; */}
+  .space-20vh-fiveth-page{width: 100%; height: 20vh; /* border: solid 1px white; */}
+  .space-25vh-fiveth-page{width: 100%; height: 25vh; /* border: solid 1px white; */}
+  .space-30vh-fiveth-page{width: 100%; height: 30vh; /* border: solid 1px white; */}
+  .space-35vh-fiveth-page{width: 100%; height: 35vh; /* border: solid 1px white; */}
+  .space-40vh-fiveth-page{width: 100%; height: 40vh; /* border: solid 1px white; */}
+  .space-45vh-fiveth-page{width: 100%; height: 45vh; /* border: solid 1px white; */}
+  .space-50vh-fiveth-page{width: 100%; height: 50vh; /* border: solid 1px white; */}
+  .space-auto-fiveth-page{width: 100%; height: auto; /* border: solid 1px white; */}
+  
+  .text-col-5vh-fiveth-page{width: 100%; height: 5vh; /* border: solid 1px palevioletred; */}
+  .text-col-10vh-fiveth-page{width: 100%; height: 10vh; /* border: solid 1px palevioletred; */}
+  .text-col-15vh-fiveth-page{width: 100%; height: 15vh; /* border: solid 1px palevioletred; */}
+  .text-col-20vh-fiveth-page{width: 100%; height: 20vh; /* border: solid 1px palevioletred; */}
+  .text-col-25vh-fiveth-page{width: 100%; height: 25vh; /* border: solid 1px palevioletred; */}
+  .text-col-30vh-fiveth-page{width: 100%; height: 30vh; /* border: solid 1px palevioletred; */}
+  .text-col-35vh-fiveth-page{width: 100%; height: 35vh; /* border: solid 1px palevioletred; */}
+  .text-col-40vh-fiveth-page{width: 100%; height: 40vh; /* border: solid 1px palevioletred; */}
+  .text-col-45vh-fiveth-page{width: 100%; height: 45vh; /* border: solid 1px palevioletred; */}
+  .text-col-50vh-fiveth-page{width: 100%; height: 50vh; /* border: solid 1px palevioletred; */}
+  .text-col-auto-fiveth-page{width: 100%; height: auto; /* border: solid 1px palevioletred; */}
+
+  .barokallahu-lakaa-image{
+    width: 100%;
+    height: 30vw;
+    padding-left: 35vw;
+    padding-right: 35vw;
+    top: 0;
+    z-index: 4;
+    position: relative;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-content: center;
+    align-items: center;
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+  .text-barokallahu-lakaa{
+    position:relative;
+    width: 100%;
+    height: auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 1vh;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 2.56vw;
+    /* identical to box height */
+    text-align: center;
+    color: #f4d873;
+    /* border: 1px solid #fffbfb; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .text-hormat-kami-pihak-pria{
+    position:relative;
+    width: 100%;
+    height: auto;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 3.5vw;
+    padding: 1vw;
+    /* identical to box height */
+    text-align: center;
+    color: #f4d873;
+    /* border: 1px solid #fffbfb; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .text-hormat-kami-pihak-wanita{
+    position:relative;
+    width: 100%;
+    height: auto;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 3.5vw;
+    padding: 1vw;
+    /* identical to box height */
+    text-align: center;
+    color: #f4d873;
+    /* border: 1px solid #fffbfb; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .bottom-image-fiveth-page{
+    height: 30vw;
+    z-index: 4;
+    position: relative;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-content: center;
+    align-items: center;
+  }
+}
+
+/**
+* . . . . . . . . *
+. * . . . . . . * .
+. . * . . . . * . .
+. . . * . . * . . .
+. . . . * * . . . .
+. . . . * * . . . .
+. . . * . . * . . .
+. . * . . . . * . .
+. * . . . . . . * .
+* . . . . . . . . *
+**/
+
+
+
+/* -------------------------------------------------------- sixth all artistic ------------------------------------------------------ */
+
+.space-5vh-sixth-page{width: 100%; height: 5vh; /* border: solid 1px white; */ float: left;}
+.space-10vh-sixth-page{width: 100%; height: 10vh; /* border: solid 1px white; */ float: left;}
+.space-15vh-sixth-page{width: 100%; height: 15vh; /* border: solid 1px white; */ float: left;}
+.space-20vh-sixth-page{width: 100%; height: 20vh; /* border: solid 1px white; */ float: left;}
+.space-25vh-sixth-page{width: 100%; height: 25vh; /* border: solid 1px white; */ float: left;}
+.space-30vh-sixth-page{width: 100%; height: 30vh; /* border: solid 1px white; */ float: left;}
+.space-35vh-sixth-page{width: 100%; height: 35vh; /* border: solid 1px white; */ float: left;}
+.space-40vh-sixth-page{width: 100%; height: 40vh; /* border: solid 1px white; */ float: left;}
+.space-45vh-sixth-page{width: 100%; height: 45vh; /* border: solid 1px white; */ float: left;}
+.space-50vh-sixth-page{width: 100%; height: 50vh; /* border: solid 1px white; */ float: left;}
+.space-auto-sixth-page{width: 100%; height: auto; /* border: solid 1px white; */ float: left;}
+
+
+.text-col-5vh-sixth-page{width: 100%; height: 5vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-10vh-sixth-page{width: 100%; height: 10vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-15vh-sixth-page{width: 100%; height: 15vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-20vh-sixth-page{width: 100%; height: 20vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-25vh-sixth-page{width: 100%; height: 25vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-30vh-sixth-page{width: 100%; height: 30vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-35vh-sixth-page{width: 100%; height: 35vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-40vh-sixth-page{width: 100%; height: 40vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-45vh-sixth-page{width: 100%; height: 45vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-50vh-sixth-page{width: 100%; height: 50vh; /* border: solid 1px palevioletred; */ float: left;}
+.text-col-auto-sixth-page{width: 100%; height: auto; /* border: solid 1px palevioletred; */ float: left;}
+
+
+.frame-sixth-page{
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+  position: relative;
+  /* border: 5px solid blueviolet; */
+  /* background-color: greenyellow; */
+  /* opacity: 0.2; */
+}
+
+.text-akses-digital{
+  position:relative;
+  width: 100%;
+  height: auto;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 2vh;
+  font-family: cursive;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 3vw;
+  /* identical to box height */
+  text-align: center;
+  color: #f4d873;
+  /* border: 1px solid #fffbfb; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.map-container{
+  position:relative;
+  height:45vh;
+}
+.map-container iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.bank-image-box{width: 100%; height: 7vw; padding-left: 20vw; padding-right: 20vw; /* border: solid 1px white; */}
+
+.left-bank-image{
+  position:relative;
+  width: 100%;
+  height: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1vw;
+  /* identical to box height */
+  text-align: center;
+  color: #ffffff;
+  /* border: 1px solid #fffbfb; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.right-bank-image{
+  position:relative;
+  width: 100%;
+  height: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1vw;
+  /* identical to box height */
+  text-align: center;
+  color: #ffffff;
+  /* border: 1px solid #fffbfb; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (min-width: 100px) and (max-width: 700px){
+  .space-5vh-sixth-page{width: 100%; height: 5vh; /* border: solid 1px white; */}
+  .space-10vh-sixth-page{width: 100%; height: 10vh; /* border: solid 1px white; */}
+  .space-15vh-sixth-page{width: 100%; height: 15vh; /* border: solid 1px white; */}
+  .space-20vh-sixth-page{width: 100%; height: 20vh; /* border: solid 1px white; */}
+  .space-25vh-sixth-page{width: 100%; height: 25vh; /* border: solid 1px white; */}
+  .space-30vh-sixth-page{width: 100%; height: 30vh; /* border: solid 1px white; */}
+  .space-35vh-sixth-page{width: 100%; height: 35vh; /* border: solid 1px white; */}
+  .space-40vh-sixth-page{width: 100%; height: 40vh; /* border: solid 1px white; */}
+  .space-45vh-sixth-page{width: 100%; height: 45vh; /* border: solid 1px white; */}
+  .space-50vh-sixth-page{width: 100%; height: 50vh; /* border: solid 1px white; */}
+  .space-auto-sixth-page{width: 100%; height: auto; /* border: solid 1px white; */}
+  
+  .text-col-5vh-sixth-page{width: 100%; height: 5vh; /* border: solid 1px palevioletred; */}
+  .text-col-10vh-sixth-page{width: 100%; height: 10vh; /* border: solid 1px palevioletred; */}
+  .text-col-15vh-sixth-page{width: 100%; height: 15vh; /* border: solid 1px palevioletred; */}
+  .text-col-20vh-sixth-page{width: 100%; height: 20vh; /* border: solid 1px palevioletred; */}
+  .text-col-25vh-sixth-page{width: 100%; height: 25vh; /* border: solid 1px palevioletred; */}
+  .text-col-30vh-sixth-page{width: 100%; height: 30vh; /* border: solid 1px palevioletred; */}
+  .text-col-35vh-sixth-page{width: 100%; height: 35vh; /* border: solid 1px palevioletred; */}
+  .text-col-40vh-sixth-page{width: 100%; height: 40vh; /* border: solid 1px palevioletred; */}
+  .text-col-45vh-sixth-page{width: 100%; height: 45vh; /* border: solid 1px palevioletred; */}
+  .text-col-50vh-sixth-page{width: 100%; height: 50vh; /* border: solid 1px palevioletred; */}
+  .text-col-auto-sixth-page{width: 100%; height: auto; /* border: solid 1px palevioletred; */}
+
+  .bank-image-box{max-width: 100%; height: auto; padding-left: 40vw; padding-right: 40vw; /* border: solid 1px white; */}
+
+  .text-akses-digital{
+    position:relative;
+    width: 100%;
+    height: auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vh;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 6vw;
+    /* identical to box height */
+    text-align: center;
+    color: #f4d873;
+    /* border: 1px solid #fffbfb; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .left-bank-image{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3vw;
+    /* identical to box height */
+    text-align: center;
+    color: #ffffff;
+    /* border: 1px solid #fffbfb; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .right-bank-image{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3vw;
+    /* identical to box height */
+    text-align: center;
+    color: #ffffff;
+    /* border: 1px solid #fffbfb; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
